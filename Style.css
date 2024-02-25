@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100%;
+    height: 100%; */
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(31.11deg 52.94% 90%);
+    line-height: 1.3;
+    color: hsl(30, 10%, 34%);
+}
+
+/* .main {
+    width: 100%;
+    height: auto;
+} */
+body .main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+     border-radius: 30px;
+    margin: 100px 300px 200px 300px;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+body .main .item {
+    flex: 1;
+    margin: 15px 35px 15px 35px;
+
+}
+
+body .main .item:last-child(1) {
+    margin: 35px 35px 15px 35px;
+}
+
+body .main img {
+    max-width: 100%;
+    height: auto;
+     border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+
+.bold {
+    font-weight: bold;
+     margin-left: 15px;
+
+}
+
+#Preparation {
+    padding: 30px 20px;
+    background-color: hsl(330, 100%, 98%);
+    line-height: 2;
+}
+
+#Preparation h2 {
+    font-family:'Outfit';
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+
+}
+
+#Preparation li {
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+
+#internal-Preparation {
+    margin-left: 30px;
+}
+
+#Ingredients {
+    padding: 0px 20px 40px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    /* line-height: 2; */
+}
+
+#Ingredients ul {
+    margin-left: 30px;
+
+}
+
+#Nutrition {
+    margin-bottom: 40px;
+}
+
+#Nutrition-table-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Ingredients h2,
+#Nutrition h2,
+#Instructions h2 {
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+    padding-bottom: 10px;
+}
+
+.li-text span {
+    margin-left: -0.1em;
+}
+
+#Nutrition-table ul {
+    padding: 5px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+#Nutrition-table li {
+    border-bottom: 1px solid hsl(30, 18%.87%);
+    padding: 5px 5px;
+}
+
+#Nutrition-value {
+     
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+ }
+#Instructions {
+    padding: 0px 20px 30px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+#Instructions ul {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+#Ingredients li {
+    padding-left:2em;
+    line-height: 2;
+}
+
+#Instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.attribution {
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 28%, 44%);
+}
+
+
+
+@media(max-width:768px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    body .container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 0px;
+        justify-content: left;
+    }
+
+    body .container .item {
+        flex: 1;
+        margin: 20px 40px 10px 40px;
+    }
+
+    body .container img {
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    body .container .item:nth-child(1) {
+        margin: 0px;
+    }
+
+    h1 {
+        line-height: 1;
+        padding-top: 10px;
+    }
+
+    #nutrition p {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
